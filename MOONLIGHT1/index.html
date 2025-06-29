@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Why?</a></li>
+            <li><a href="#">...</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" class="stars">
+        <img src="moon.png" class="moon">
+        <img src="mountains_behind.png" class="mountains_behind">
+        <h2 class="title">Moon Light</h2>
+        <a href="#sec" class="btn">Explore</a>
+        <img src="mountains_front.png" class="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>PARADAX SCROLLING EFECTS</h2>
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.ure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.ure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil.ure nihil.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Beatae, sunt vero! Nulla error ullam, aliquid itaque voluptatem saepe mollitia
+            quaerat! Exercitationem laudantium, saepe deleniti vitae q
+            uis dolores a iure nihil. <br><br></p>
+    </div>
+    <script>
+        let stars = document.getElementById("stars");
+        let moon = document.getElementById("moon");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let title = document.getElementById("title");
+        let btn = document.getElementById("btn");
+        let mountains_front = document.getElementById("mountains_front");
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+
+        })
+    </script>
+</body>
+</html>

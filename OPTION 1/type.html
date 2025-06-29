@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="type.css">
+</head>
+<body>
+    <div class="dropdown">
+        <input type="text" class="text02" readonly placeholder="Tipo de servicio">
+        <div class="option">
+            <div onmouseover="show('Página Web')">Página Web</div>
+            <div onmouseover="show('Sitio Web')">Sitio Web</div>
+            <div onmouseover="show('Tienda Online')">Tienda Online</div>
+            <div onmouseover="show('Desarrollo Movil Android')">Desarrollo Movil Android</div>
+            <div onmouseover="show('Desarrollo Movil IOS')">Desarrollo Movil IOS</div>
+            <div onmouseover="show('Hosting')">Hosting</div>
+            
+        </div>
+    </div>
+
+    <script>
+        function show(a)
+        {
+            document.querySelector('.text02').value =a;
+        }
+
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function()
+        {
+            dropdown.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

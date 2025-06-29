@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos. */
+    padding: 0; /* Elimina los rellenos predeterminados de todos los elementos. */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del tamaño total del elemento. */
+    font-family: 'Ubuntu', sans-serif; /* Aplica una fuente sans-serif como fuente predeterminada para todo. */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    color: #000; /* Establece el color del texto de los enlaces en negro. */
+}
+
+img {
+    object-fit: cover; /* Hace que la imagen cubra su contenedor sin distorsionarse. */
+}
+
+body {
+    background-color: #f1f1f1; /* Establece un color de fondo gris claro para la página. */
+}
+
+nav {
+    padding: 0 80px; /* Agrega un padding horizontal de 80px a la barra de navegación. */
+    display: flex; /* Utiliza flexbox para distribuir los elementos dentro del nav. */
+    align-items: center; /* Centra verticalmente los elementos dentro del nav. */
+    justify-content: space-between; /* Coloca los elementos a los extremos (espacio entre ellos). */
+    height: 80px; /* Establece una altura fija de 80px para la barra de navegación. */
+}
+
+nav a.logo {
+    font-size: 33px; /* Establece el tamaño de fuente del logo en 33px. */
+    color: #0f2182; /* Define el color del texto del logo en un azul oscuro. */
+    font-weight: 600; /* Aplica un peso de fuente semi-negrita al logo. */
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px; /* Agrega espacio a la derecha de todos los enlaces excepto el último. */
+}
+
+nav .login button {
+    padding: 8px 14px; /* Define espacio interno del botón (vertical 8px, horizontal 14px). */
+    border: none; /* Elimina el borde predeterminado del botón. */
+    cursor: pointer; /* Cambia el cursor al de "clickeable" cuando pasa sobre el botón. */
+    background-color: transparent; /* Hace el fondo del botón transparente. */
+}
+
+nav .login button.signup {
+    background-color: #000; /* Establece un fondo negro para el botón de registro. */
+    color: #fff; /* Establece el texto del botón en color blanco. */
+    border-radius: 4px; /* Redondea ligeramente las esquinas del botón. */
+    margin-right: 14px; /* Agrega un margen a la derecha del botón de registro. */
+}
+
+header {
+    padding: 0 80px; /* Espaciado horizontal interno de 80px en el header. */
+    height: calc(100vh - 80px); /* Altura del header igual a la altura de la ventana menos 80px (altura del nav). */
+    display: flex; /* Usa flexbox para organizar los elementos hijos. */
+    align-items: center; /* Centra verticalmente los elementos del header. */
+    justify-content: space-between; /* Coloca los elementos a los extremos del header. */
+}
+
+header .left {
+    width: 700px; /* Define el ancho del contenedor izquierdo dentro del header. */
+}
+
+header .left h1 {
+    font-size: 80px; /* Tamaño grande para el título principal. */
+}
+
+header .left h1 span {
+    color: #0f2182; /* Aplica un color azul oscuro a la palabra o frase dentro del <span>. */
+}
+
+header .left p {
+    margin: 40px 0; /* Margen vertical de 40px arriba y abajo del párrafo. */
+    color: #777; /* Color de texto gris medio. */
+}
+
+header .left a {
+    display: flex; /* Usa flexbox para alinear el ícono y el texto dentro del enlace. */
+    align-items: center; /* Centra verticalmente el ícono y el texto. */
+    background: #000; /* Fondo negro para el botón. */
+    width: 200px; /* Ancho fijo para el botón/enlace. */
+    padding: 8px; /* Relleno interno de 8px en todos los lados. */
+    border-radius: 60px; /* Bordes redondeados para apariencia de cápsula. */
+}
+
+header .left a i {
+    background-color: #fff; /* Fondo blanco para el ícono. */
+    font-size: 24px; /* Tamaño del ícono. */
+    border-radius: 50%; /* Hace el ícono completamente circular. */
+    padding: 8px; /* Espaciado interno dentro del ícono. */
+}
+
+header .left a span {
+    color: #fff; /* Color blanco para el texto del botón. */
+    margin-left: 10px; /* Espacio a la izquierda del ícono antes del texto. */
+}
+
+header img {
+    width: 600px; /* Define un ancho fijo de 600px para la imagen en el header. */
+}
+
+h2.separator {
+    padding: 0 80px; /* Espaciado horizontal de 80px para el título separador. */
+    font-size: 40px; /* Tamaño de fuente grande para destacar el encabezado. */
+    margin-top: 40px; /* Espacio superior de 40px para separarlo de elementos anteriores. */
+}
+
+.sell-nft {
+    padding: 0 80px; /* Espaciado horizontal de 80px para la sección. */
+    margin: 50px 0 80px; /* Márgenes: 50px arriba, 80px abajo. */
+    display: flex; /* Usa flexbox para organizar los elementos hijos horizontalmente. */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos. */
+    gap: 30px; /* Espacio de 30px entre los elementos. */
+}
+
+.sell-nft .item,
+.nft-shop .nft-list .item
+{
+    padding: 20px; /* Relleno interno de 20px dentro de cada tarjeta. */
+    background: #dbdbdb; /* Color de fondo gris claro para las tarjetas. */
+    border-radius: 18px; /* Bordes redondeados de 18px para suavizar el diseño. */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+    transition: all 0.3s ease; /* Suaviza cualquier cambio en las propiedades con transición. */
+}
+
+.sell-nft .item:hover,
+.nft-shop .nft-list .item:hover
+{
+    box-shadow: none; /* Elimina la sombra al pasar el mouse (efecto hover). */
+}
+
+.sell-nft .item .header {
+    display: flex; /* Organiza ícono y texto en línea. */
+    align-items: center; /* Centra verticalmente el ícono y el texto. */
+    gap: 10px; /* Espacio de 10px entre el ícono y el texto. */
+}
+
+.sell-nft .item .header i {
+    font-size: 40px; /* Tamaño grande para el ícono. */
+}
+
+.sell-nft .item .header h5 {
+    font-size: 17px; /* Tamaño de fuente para el subtítulo dentro del encabezado. */
+}
+
+.sell-nft .item p {
+    margin-top: 10px; /* Espacio superior para separar el párrafo del header. */
+    padding: 0 4px; /* Espacio horizontal interno de 4px en el párrafo. */
+}
+
+.nft-shop {
+    padding: 0 80px; /* Espaciado horizontal interno de 80px en la sección de la tienda NFT. */
+    margin-top: 30px; /* Margen superior de 30px para separarlo de la sección anterior. */
+}
+
+.nft-shop .category {
+    display: flex; /* Muestra los enlaces de categoría en una línea horizontal. */
+    gap: 14px; /* Espacio de 14px entre cada enlace. */
+}
+
+.nft-shop .category a {
+    font-weight: 500; /* Grosor medio para el texto de los enlaces. */
+    background-color: #dfdcdc; /* Fondo gris claro. */
+    padding: 8px 14px; /* Espaciado interno para que parezcan botones. */
+    font-size: 15px; /* Tamaño de fuente ligeramente mayor al normal. */
+    border-radius: 14px; /* Bordes redondeados. */
+    transition: all 0.3s ease; /* Transición suave en hover. */
+}
+
+.nft-shop .category a:hover {
+    color: #fff; /* Cambia el texto a blanco en hover. */
+    background-color: #0f2182; /* Cambia el fondo a azul oscuro. */
+}
+
+.nft-shop .nft-list {
+    padding: 40px 0; /* Espaciado vertical interno. */
+    display: flex; /* Muestra las tarjetas NFT horizontalmente. */
+    justify-content: space-between; /* Distribuye las tarjetas con espacio entre ellas. */
+    gap: 20px; /* Espacio entre tarjetas. */
+}
+
+.nft-shop .nft-list .item img {
+    width: 280px; /* Ancho fijo para las imágenes NFT. */
+    height: 280px; /* Altura fija para mantener forma cuadrada. */
+    border-radius: 18px; /* Bordes redondeados. */
+}
+
+.nft-shop .nft-list .item .info {
+    display: flex; /* Muestra el nombre y el precio en una línea. */
+    align-items: flex-end; /* Alinea los elementos al fondo. */
+    justify-content: space-between; /* Distribuye nombre y precio a los extremos. */
+    padding: 12px 0; /* Espaciado vertical. */
+    border-bottom: 1px solid #edecec; /* Línea separadora inferior. */
+}
+
+.nft-shop .nft-list .item .info h5 {
+    font-size: 18px; /* Tamaño del nombre del NFT. */
+}
+
+.nft-shop .nft-list .item .info .btc {
+    margin-top: 10px; /* Espacio arriba del ícono y valor en BTC. */
+    display: flex; /* Ícono y texto en línea. */
+    align-items: center; /* Centrado vertical. */
+    gap: 5px; /* Espacio entre ícono y texto. */
+}
+
+.nft-shop .nft-list .item .btc i {
+    font-size: 22px; /* Tamaño del ícono BTC. */
+    color: #304ffe; /* Azul llamativo. */
+}
+
+.nft-shop .nft-list .item .btc p {
+    font-size: 12px; /* Texto pequeño para valor en BTC. */
+    color: #304ffe; /* Mismo azul que el ícono. */
+}
+
+.nft-shop .nft-list .item .info > p {
+    font-size: 12px; /* Texto pequeño para detalles extra. */
+    color: #989898; /* Color gris claro. */
+}
+
+.nft-shop .nft-list .item .bid {
+    padding: 14px 0 4px; /* Espaciado vertical con más arriba que abajo. */
+    display: flex; /* Organiza la puja y el botón en línea. */
+    align-items: center; /* Centrado vertical. */
+    justify-content: space-between; /* Espaciado entre texto y enlace. */
+}
+
+.nft-shop .nft-list .item .bid p,
+.nft-shop .nft-list .item .bid a {
+    background-color: #edecec; /* Fondo gris claro para ambos. */
+    padding: 6px 10px; /* Relleno interno. */
+    font-size: 13px; /* Tamaño de fuente pequeño. */
+    border-radius: 10px; /* Bordes redondeados. */
+}
+
+.nft-shop .nft-list .item .bid a {
+    color: #304ffe; /* Azul llamativo para el enlace. */
+    background: transparent; /* Fondo transparente por defecto. */
+    font-weight: bold; /* Texto en negritas. */
+    transition: all 0.3s ease; /* Transición suave al hacer hover. */
+}
+
+.nft-shop .nft-list .item .bid a:hover {
+    color: #fff; /* Texto blanco en hover. */
+    background-color: #000; /* Fondo negro en hover. */
+}
+
+
